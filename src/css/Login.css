@@ -1,0 +1,78 @@
+* {
+    margin: 0px; 
+    padding: 0px; 
+}
+body html {
+    margin: 0px; 
+    padding: 0px; 
+}
+.mainSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.logoImage {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.loginPara {
+    font-size: 13px;
+}
+.loginForm {
+    width: 50%;
+    height: 100vh;
+    background-color: #F7F7F7;
+}
+.formDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: #FFFFFF;
+    margin-top: 19px;
+    margin-left: 23px;
+    margin-right: 20px;
+    margin-bottom: 34px; 
+}
+.email, .password {
+    height: 3em;
+    width: 26em;
+    padding-left: 11px;
+    border-radius: 7px;
+    outline: 1px solid #9898b8;
+    border: 1px solid white;
+}
+.loginEyeImage {
+    margin-left: -30px;
+}
+.displayHeadersPara {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.inputDiv {
+    margin-bottom: 20px;
+}
+.loginBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.loginBtn {
+    width: 20em;
+    height: 43px;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: #d1d1d4; 
+}
+.loginBtn:hover, 
+.loginBtn:focus {
+    background-color:  #5250fa;
+}
+.label {
+    font-size: 13px;
+}

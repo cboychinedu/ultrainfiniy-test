@@ -1,0 +1,103 @@
+* {
+    margin: 0px; 
+    padding: 0px; 
+}
+body html {
+    margin: 0px; 
+    padding: 0px; 
+}
+.mainSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.signUpImageEyeImage {
+    margin-left: -30px;
+}
+.imageSection {
+    height: 100vh;
+    background-image: url("../images/background.png");
+    width: 50%;
+    background-color: black;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logoImage {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.signForm {
+    width: 50%;
+    height: 100vh;
+    background-color: #F7F7F7;
+}
+.fullNameDiv, .emailDiv, .passwordDiv {
+    margin-bottom: 10px;
+}
+.fullname, .email, .password {
+    height: 37px;
+    padding-left: 12px;
+    width: 23em;
+    border-radius: 7px;
+    outline: 1px solid #0000ff1a;
+    border: 1px solid #0000ff2e
+}
+.container {
+    display: grid;
+    width: 78%;
+    justify-content: center;
+    align-items: center;
+    height: 53%;
+    margin-bottom: 98px;
+}
+.signUpPara {
+    font-size: 12px;
+    margin-left: -16px;
+}
+.formDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: #FFFFFF;
+    margin-top: 19px;
+    margin-left: 23px;
+    margin-right: 20px;
+    margin-bottom: 34px; 
+}
+.displayHeadersPara {
+    margin-bottom: 1em;
+}
+.checkboxDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.checkboxPara {
+    font-size: 12px;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.confirmPasswordDiv {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.signUpBtn {
+    width: 20em;
+    height: 43px;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: #d1d1d4; 
+    
+}
+.signUpBtn:hover, 
+.signUpBtn:focus {
+    background-color: #5250fa;
+}

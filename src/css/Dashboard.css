@@ -1,0 +1,101 @@
+* {
+    padding: 0px; 
+    margin: 0px; 
+}
+.mainSectionDashboard {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    justify-items: center;
+}
+  
+.rightDiv {
+    height: 103vh;
+    background-color: rgb(231, 237, 218);
+    width: 77%;
+    padding: 2%;
+}
+.leftDiv {
+    height: 100vh;
+    width: 20%;
+}
+.dashboardMenu {
+    display: flex;
+    padding-left: 30px;
+    padding-top: 36px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.dashboardPara {
+    padding-left: 8px;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.dashboardMenuImageLogout {
+    margin-top: 46px;
+    margin-top: 46px;
+    padding-left: 2em;
+    height: 15em;
+}
+.firstDiv {
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+.searchDiv {
+    width: 40%;
+    display: flex;
+    height: 40px;
+    background-color: white;
+    align-items: center;
+    border-radius: 9px;
+    justify-content: flex-start;
+}
+.third {
+    margin-top: 13px;
+}
+.searchLogo {
+    height: 22px;
+    width: 23px;
+    margin-left: 8px;
+}
+.searchInputForm {
+    height: 37px;
+    width: 84%;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+.userDisplayName {
+    float: right;
+    height: 38px;
+    margin-right: 30px;
+}
+.secondDiv {
+    margin-top: 2em;
+    margin-bottom: 15px;
+    height: 13em;
+}
+.secondDivInner {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.overViewDiv {
+    height: 132px;
+    width: 50%;
+}
+.overviewImage {
+    height: 166px;
+    width: 85%;
+}
+.overViewParaDiv {
+    margin-bottom: 22px;
+}
+.bitcoinVolumeImage {
+    width: 96%;
+    height: 240px;
+}
