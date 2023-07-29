@@ -1,75 +1,67 @@
 // Importing the necessary modules 
 import React, { Component, Fragment } from 'react'
-import { Link } from 'react-router-dom'
 import "../css/Login.css"
-import logoImage from "../images/logo.png"
 import eyeLogo from "../images/eye.png"; 
+import ImageDiv from './ImageDiv.jsx';
+import FormDiv from './FormDiv';
 
 // Creating the class based component 
 class Login extends Component {
-    // Creating a state 
-    state = {}
-
-    // Handle on change password 
-    onChange = (event) => {
-        console.log(event); 
-    }
 
     // Rendering the component 
     render() {
-        // Returning the jsx component 
-        return (
-            <Fragment> 
-                <section className="mainSection">
-                    <div className="imageSection">
-                        <div className="logoImageDiv">
-                            <img src={logoImage} alt="" className="logoImage"/>
+        // Checking the the background color is white or black 
+        if (this.props.state === "black") {
+            // Returning the jsx component 
+            return (
+                <Fragment> 
+                    <section >
+                        <section className="mainSection">
+                            <ImageDiv 
+                                style={{ backgroundColor: "black"}} 
+                                changeBackgroundColor={this.props.changeBackgroundColor}
+                                buttonText={this.props.buttonText}
+                            /> 
+
+                        <div className="loginForm" style={{ backgroundColor: "black"}}>
+                        
+                            <FormDiv style={{ backgroundColor: "black"}} state={this.props.state}/>    
+                           
                         </div>
-                    </div>
-                    <div className="loginForm">
-                        <div className="formDiv">
+                        <div className="formSection"></div>
+                    </section>
 
-                            <div className="containerLogin">
-                                <div className="displayHeadersPara">
-                                    <h2 className="loginHeader"> Login </h2> <br />
 
-                                    <p className="loginPara"> 
-                                        Welcome Back, Enter your details. 
-                                    </p>
-                                </div>
+                    </section>
+                    
+                </Fragment>
+            )
+        }
 
-                                <div className='inputDiv'>
-                                    <label htmlFor="" className="label emailLabel"> Email </label> <br /> 
-                                    <input className="email" placeholder='Enter your Email address' /> 
-                            
-                                </div>
+        else {
+            return(
+                <Fragment> 
+                <section >
+                    <section className="mainSection">
+                        <ImageDiv 
+                            changeBackgroundColor={this.props.changeBackgroundColor}
+                            buttonText={this.props.buttonText}
+                        /> 
 
-                                <div className='inputDiv'>
-                                    <label htmlFor='' className="label passwordLabel"> Password </label> <br /> 
-                                    <div>
-                                        <input onChange={this.onChange} type="password" className="password" placeholder='Enter Password' /> 
-                                        <img src={eyeLogo} alt="" class="loginEyeImage"/>
-                                    </div>
-                                    
-                                </div>
-
-                                <div className="loginBtnDiv">
-                                    <button className="loginBtn"> Login </button>
-                                </div>
-
-                            </div>
-
-                         
-
+                        <div className="loginForm">
+                            <FormDiv>    
+                            </FormDiv> 
                         </div>
-
-
-                    </div>
                     <div className="formSection"></div>
                 </section>
 
-            </Fragment>
-        )
+
+                </section>
+                
+                </Fragment>
+            )
+        }
+
     }
 }
 

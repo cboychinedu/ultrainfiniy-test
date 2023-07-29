@@ -9,7 +9,32 @@ import Dashboard from './component/Dashboard';
 
 // Rendering the App component 
 class App extends Component {
-  state = {}
+  state = {
+    backgroundColor: "white", 
+    buttonText: "Dark Mode"
+  }
+
+  // Creating a function for changing the background color 
+  changeBackgroundColor = (event) => {
+    // Checking the state 
+    if (this.state.backgroundColor === "black") {
+      this.setState({
+        backgroundColor: "white", 
+        buttonText: "Dark Mode", 
+     })
+    }
+
+    // Else 
+    else if (this.state.backgroundColor === "white") {
+      this.setState({
+        backgroundColor: "black",
+        buttonText: "White Mode",  
+      })
+    }
+
+
+
+  }
 
   // Rendering the component 
   render() {
@@ -18,9 +43,21 @@ class App extends Component {
          <BrowserRouter> 
          {/* Setting the routes configurations */}
          <Routes> 
-            <Route exact path="/" element={<Login />} />
-            <Route path="/signup" element={<Signup /> } /> 
-            <Route path="/dashboard" element={<Dashboard /> } /> 
+            <Route exact path="/" element={
+              <Login changeBackgroundColor={this.changeBackgroundColor} 
+              state={this.state.backgroundColor}
+              buttonText={this.state.buttonText}
+            />} />
+            <Route path="/signup" element={
+              <Signup changeBackgroundColor={this.changeBackgroundColor}
+              state={this.state.backgroundColor}
+              buttonText={this.state.buttonText}
+            /> } /> 
+            <Route path="/dashboard" element={
+              <Dashboard changeBackgroundColor={this.changeBackgroundColor}
+              state={this.state.backgroundColor}
+              buttonText={this.state.buttonText}
+            /> } /> 
 
          </Routes>
          </BrowserRouter>

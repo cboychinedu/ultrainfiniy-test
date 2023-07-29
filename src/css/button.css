@@ -1,0 +1,15 @@
+.switchImage {
+    margin-right: 15px;
+    margin-top: 28px;
+    height: 35px;
+    width: 118px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-weight: bold;
+    background-color: #5250faf2;
+    border: none;
+    outline: none; 
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+}
