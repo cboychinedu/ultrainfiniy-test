@@ -3,7 +3,7 @@ import React, { Component, Fragment } from 'react'
 import "../css/Login.css"
 import eyeLogo from "../images/eye.png"; 
 import ImageDiv from './ImageDiv.jsx';
-import FormDiv from './FormDiv';
+import FormDiv from './SignInFormDiv';
 
 // Creating the class based component 
 class Login extends Component {

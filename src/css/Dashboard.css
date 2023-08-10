@@ -11,10 +11,10 @@
 }
   
 .rightDiv {
-    height: 103vh;
-    background-color: rgb(231, 237, 218);
+    height: 119vh;
+    background-color: rgb(245 245 245);
     width: 77%;
-    padding: 2%;
+    padding: 15px;
 }
 .leftDiv {
     height: 100vh;
