@@ -37,6 +37,7 @@ body html {
     width: 50%;
     height: 100vh;
     background-color: black;
+    padding-bottom: 100px;
 }
 .fullNameDiv, .emailDiv, .passwordDiv {
     margin-bottom: 10px;
@@ -128,25 +129,52 @@ body html {
         margin-bottom: 15px; 
         padding-left: 5px; 
     }
+    .switchImage {
+        margin-left: 22px;
+        margin-top: 54px;
+        height: 32px;
+        width: 108px;
+        padding-left: 14px;
+        padding-right: 15px;
+        font-weight: bold;
+        background-color: #2f2e59f2;
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 4px;
+        font-size: 10px;
+        margin-right: 42px;
+        margin-bottom: -42px;
+    }
+    .logoImage {
+        padding-left: 43px;
+        padding-top: 30px;
+      }
+    .signUpBtn {
+        width: 18em;
+    }
     .formDiv {
         padding-left: 14px;
     }
     .signForm {
         width: 21em;
-        height: 89vh;
+        height: 74vh;
         background-color: white;
         padding-left: 59px;
+        padding-bottom: 100px;
     }
     .signFormBlack {
         width: 100%;
         height: 100vh;
         background-color: black;
+        padding-bottom: 100px;
     }
     .signForm {
         width: 21em;
         height: 89vh;
         background-color: white;
         padding-left: 59px;
+        padding-bottom: 100px;
     }
     .fullname, .email, .password {
         width: 21em;
@@ -213,17 +241,13 @@ body html {
         height: 89vh;
         background-color: white;
         padding-left: 59px;
-    }
-    .signForm {
-        width: 21em;
-        height: 89vh;
-        background-color: white;
-        padding-left: 59px;
+        padding-bottom: 100px;
     }
     .signFormBlack {
         width: 100%;
         height: 100vh;
         background-color: black;
+        padding-bottom: 100px;
     }
     .mainSection {
         display: grid;
@@ -280,12 +304,6 @@ body html {
   }
   /* Media query for tablets and larger screens */
   @media (min-width: 340px) and (max-width: 360px) {
-    .signForm {
-        width: 21em;
-        height: 89vh;
-        background-color: white;
-        padding-left: 59px;
-    }
     .displayHeadersPara {
         margin-bottom: 1em;
         padding-left: 10px;
@@ -295,16 +313,13 @@ body html {
         height: 89vh;
         background-color: white;
         padding-left: 59px;
+        padding-bottom: 100px;
     }
     .signFormBlack {
         width: 100%;
         height: 100vh;
         background-color: black;
-    }
-    .signFormBlack {
-        width: 100%;
-        height: 100vh;
-        background-color: black;
+        padding-bottom: 100px;
     }
     .mainSection {
         display: grid;
@@ -384,12 +399,14 @@ body html {
         width: 100%;
         height: 100vh;
         background-color: black;
+        padding-bottom: 100px;
     }
     .signForm {
         width: 21em;
-        height: 89vh;
+        height: 93vh;
         background-color: white;
         padding-left: 59px;
+        padding-bottom: 105px;
     }
       .imageSection {
         height: 14vh;
@@ -452,11 +469,13 @@ body html {
         height: 89vh;
         background-color: white;
         padding-left: 59px;
+        padding-bottom: 100px;
     }
     .signFormBlack {
         width: 100%;
         height: 100vh;
         background-color: black;
+        padding-bottom: 100px;
     }
       .imageSection {
             height: 12vh;
